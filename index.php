@@ -6,11 +6,7 @@ if(isset($_FILES['image']))
 $file_name = $_FILES['image']['name'];   
 $temp_file_location = $_FILES['image']['tmp_name']; 
 
-//$contents = $_FILES['image'];
-// $file = 'php://memory'; //full memory buffering mode
-// //$file = 'php://temp/maxmemory:1048576'; //partial memory buffering mode. Tries to use memory, but over 1MB will automatically page the excess to a file.
-// $o = new SplFileObject($file, 'w+');
-// $o->fwrite($contents);
+
 
 
 // Step 1 - Scan for viruses with Cloudmersive Virus Scan
@@ -18,7 +14,7 @@ $temp_file_location = $_FILES['image']['tmp_name'];
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: Apikey
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Apikey', 'API-KEY-GOES-HERE');
+$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('Apikey', 'API-KEY-HERE');
 
 
 
