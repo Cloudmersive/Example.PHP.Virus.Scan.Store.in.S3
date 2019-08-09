@@ -1,4 +1,11 @@
 <?php
+
+// Step 1 - Scan for viruses with Cloudmersive Virus Scan
+
+
+
+// Step 2 - Upload to S3
+
 	if(isset($_FILES['image'])){
 		$file_name = $_FILES['image']['name'];   
 		$temp_file_location = $_FILES['image']['tmp_name']; 
