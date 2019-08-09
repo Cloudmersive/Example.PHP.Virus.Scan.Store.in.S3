@@ -1,0 +1,7 @@
+{
+    "require": {
+        "aws/aws-sdk-php": "^3.109",
+        "cloudmersive/cloudmersive_validate_api_client": "^1.4",
+        "cloudmersive/cloudmersive_virusscan_api_client": "^1.4"
+    }
+}
